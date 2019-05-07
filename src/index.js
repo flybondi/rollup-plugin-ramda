@@ -1,5 +1,11 @@
 import { parse } from 'acorn';
+import { compose, last, split } from 'ramda';
 import MagicString from 'magic-string';
+
+const getExtension = compose(
+  last,
+  split('.')
+);
 
 export default function ramda(options = {}) {
   if (!options.transforms) {
@@ -19,7 +25,7 @@ export default function ramda(options = {}) {
       let ast;
       let transformedSomething = false;
 
-      if (options.ignore.includes(id)) {
+      if (options.ignore.includes(getExtension(id))) {
         return null;
       }
 
