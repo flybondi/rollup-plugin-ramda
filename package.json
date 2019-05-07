@@ -1,11 +1,12 @@
 {
   "name": "@flybondi/rollup-plugin-ramda",
-  "version": "0.0.0-development",
+  "version": "1.1.1",
   "description": "Removes unused ramda dependencies",
   "license": "MIT",
   "dependencies": {
     "acorn": "^6.1.1",
-    "magic-string": "^0.25.2"
+    "magic-string": "^0.25.2",
+    "ramda": "^0.26.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
