@@ -31,7 +31,6 @@ export default function ramda(options = {}) {
 
       try {
         ast = parse(code, {
-          ecmaVersion: 6,
           sourceType: 'module'
         });
       } catch (err) {
