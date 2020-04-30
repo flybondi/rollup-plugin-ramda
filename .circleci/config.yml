@@ -9,7 +9,7 @@
 
 job_defaults: &job_defaults
   docker:
-    - image: flybondi/docker-nodejs-awscli:8.10
+    - image: flybondi/docker-nodejs-awscli:12.x
 
 npm_config: &npm_config
   name: Configure NPM user
@@ -113,4 +113,3 @@ workflows:
             branches:
               only: master
           context: flybondi-ci
-
